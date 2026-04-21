@@ -1,0 +1,30 @@
+{
+  "exchanges": ["binance", "kucoin", "bybit"],
+  "watchlist": [
+    "BTC/USDT", "ETH/USDT", "ETH/BTC",
+    "SOL/USDT", "SOL/BTC", "SOL/ETH",
+    "XRP/USDT", "XRP/BTC", "DOGE/USDT",
+    "AVAX/USDT", "AVAX/BTC", "LINK/USDT"
+  ],
+  "fee_buffer": 0.001,
+  "min_profit_pct": 0.002,
+  "min_notional_usd": 1000,
+  "poll_interval_sec": 2.0,
+  "ui_refresh_ms": 1000,
+  "max_display_rows": 5,
+  "ui_position": "bottom-right",
+  "ui_width": 520,
+  "ui_height": 200,
+  "show_filter": "all",
+  "alert_sound_threshold_pct": 0.005,
+  "log_to_csv": true,
+  "log_file": "arb_log.csv",
+  "fee_overrides": {
+    "binance": { "maker": 0.001, "taker": 0.001 },
+    "kucoin":  { "maker": 0.001, "taker": 0.001 },
+    "bybit":   { "maker": 0.001, "taker": 0.001 }
+  },
+  "coin_whitelist": [],
+  "coin_blacklist": ["LUNA", "UST"],
+  "exchange_blacklist": []
+}
